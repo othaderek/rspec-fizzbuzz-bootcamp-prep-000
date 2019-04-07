@@ -2,15 +2,14 @@
 # See README.md for instructions on how to do this
 
 def fizzbuzz(int)
-  if (int % 3 == 0) || (int % 5 == 0) 
-  	if (int % 3 == 0) && !(int % 5 == 0)
-  		puts "Fizz"
-  	end
-  elsif (int % 5 == 0) && !(int % 3 == 0)
-  	puts "Buzz"
-  elsif (int % 5 == 0) && (int % 3 == 0)
-  	puts "FizzBuzz"
+  if int % 3 == 0 && int % 5 == 0 
+    puts "FizzBuzz"
+    elsif int % 3 == 0 && !int % 5 == 0
+    puts "Fizz"
+    elsif !int % 3 == 0 && int % 5 == 0
+    puts "Buzz"
   else
-  	return nil 
+    return nil
   end
+  
 end
