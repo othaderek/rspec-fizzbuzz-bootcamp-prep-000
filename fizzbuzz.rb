@@ -2,12 +2,15 @@
 # See README.md for instructions on how to do this
 
 def fizzbuzz(int)
-  if int % 3 == 0 || if int % 5 == 0 
-    if 
+  if (int % 3 == 0) || (int % 5 == 0) 
+  	if (int % 3 == 0) && !(int % 5 == 0)
+  		puts "Fizz"
+  	end
+  elsif (int % 5 == 0) && !(int % 3 == 0)
+  	puts "Buzz"
+  elsif (int % 5 == 0) && (int % 3 == 0)
+  	puts "FizzBuzz"
+  else
+  	return nil 
   end
 end
-
-fizzbuzz(3)
-fizzbuzz(5)
-fizzbuzz(15)
-fizzbuzz(4)
