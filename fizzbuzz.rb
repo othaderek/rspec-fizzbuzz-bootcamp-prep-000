@@ -6,3 +6,4 @@ def fizzbuzz(int)
     puts "Fizz"
   end
 end
+
